@@ -1,14 +1,16 @@
-export interface Book{
-    id:number,
-    name:string,
-    username:'string',
-    email:'string',
-    address:Address
+export interface Book {
+    id: number;
+    name: string;
+    username: string; 
+    email: string; 
+    image: string;
+    address: Address;
+    title?: string; 
 }
 
 export interface Address{
     street:string,
-    suite:'string',
+    suite:string,
 }
 
 // {
