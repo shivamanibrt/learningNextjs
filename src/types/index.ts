@@ -1,17 +1,29 @@
 export interface Book {
     id: number;
     name: string;
-    username: string; 
-    email: string; 
-    image: string;
-    address: Address;
-    title?: string; 
+    username: string;
+    email: string;
+    address: {
+        street: string;
+        suite: string;
+        city: string;
+        zipcode: string;
+        geo: {
+            lat: string;
+            lng: string;
+        };
+    };
+    phone: string;
+    website: string;
+    company: {
+        name: string;
+        catchPhrase: string;
+        bs: string;
+    };
+    image:string,
+    title?:string,
 }
 
-export interface Address{
-    street:string,
-    suite:string,
-}
 
 // {
 //     id: 9,

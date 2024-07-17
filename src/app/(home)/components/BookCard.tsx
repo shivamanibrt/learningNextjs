@@ -23,7 +23,7 @@ const BookCard = ({ book }: { book: Book }) => {
                 </p>
                 <Link
                     href={`/book/${book.id}`}
-                    className='border-primary-500 mt-4 inline-block  border py-1 px-2 rounded text-primary-500 font-medium text-sm hover:border-primary-100 hover:bg-primary-100 transition'
+                    className='border-primary-500 mt-4 inline-block border py-1 px-2 rounded text-primary-500 font-medium text-sm hover:border-primary-100 hover:bg-primary-100 transition-300'
                 >
                     Read more
                 </Link>
